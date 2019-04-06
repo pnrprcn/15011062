@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shapes"
+    >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:scaleType="centerCrop" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+            />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/name"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Last Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/birthplace"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/lastname"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+            android:layout_marginTop="10dp"
+            android:hint="Place Of Birth"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/tc"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/birthplace"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="TC NO"
+            android:inputType="number"
+            android:maxLength="11"
+
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"/>
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Mobile:5XX XXX XX XX"
+            android:inputType="number"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+            android:maxLength="10" />
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tel"
+            android:hint="E-mail"
+            android:inputType="text"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+
+           />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/mail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:hint="SUBMIT" />
+        <Button
+            android:id="@+id/clearbutton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:hint="CLEAR"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

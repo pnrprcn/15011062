@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shapes">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainrellay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/contentlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+
+            <LinearLayout
+                android:id="@+id/rellaya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:background="#889B9393"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/ppic"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/nameArea"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:shadowColor="@color/colorPrimary" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/buttonlilay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rellaya"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/dersButton"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/rellaya"
+                    android:text="LECTURE RECORDS"
+                    android:background="#90B8C2E6"
+                    android:layout_marginRight="10dp"
+                    ></Button>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/dersButton"
+                    android:layout_gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/callButton"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/rellaya"
+                        android:layout_marginLeft="10dp"
+                        android:background="#90B8C2E6"
+                        android:text="DIAL PHONE NUMBER" />
+
+                    <Button
+                        android:id="@+id/mailbutton"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/callButton"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#90B8C2E6"
+                        android:text="SEND E-MAIL" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
